@@ -1,0 +1,11 @@
+service: aws-june28
+frameworkVersion: '3'
+configValidationMode: error
+provider:
+  name: aws
+  deploymentMethod: direct
+  region: ap-south-1
+  deploymentPrefix: infra
+
+resources:
+  - ${file(./resources/ec2.yml)}
