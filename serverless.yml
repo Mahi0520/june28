@@ -1,4 +1,4 @@
-service: aws-june28
+service: june28
 frameworkVersion: '3'
 configValidationMode: error
 provider:
