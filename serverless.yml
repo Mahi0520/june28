@@ -1,4 +1,4 @@
-service: aws-june28
+service: june28
 frameworkVersion: '3'
 configValidationMode: error
 provider:
@@ -9,3 +9,4 @@ provider:
 
 resources:
   - ${file(./resources/ec2.yml)}
+  - ${file(./resources/ecr.yml)}
