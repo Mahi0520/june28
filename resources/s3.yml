@@ -1,12 +1,7 @@
 ---
 Resources:
-  S3Bucket:
+  S3Bucket0307:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: mahi-s3-bucket
-      PublicAccessBlockConfiguration:
-        BlockPublicAcls: false
-        BlockPublicPolicy: false
-        IgnorePublicAcls: false
-        RestrictPublicBuckets: false
+      BucketName: mahi-s3-bucket-demo

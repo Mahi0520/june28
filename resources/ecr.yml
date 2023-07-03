@@ -1,16 +1,16 @@
 ---
 Resources:
-  MyRepository: 
+  MyRepository0307: 
     Type: AWS::ECR::Repository
     Properties: 
-      RepositoryName: "test-repository"
+      RepositoryName: "test-mahi-repository"
 
-  MyQueue: 
+  MyQueue0307: 
     Type: AWS::SQS::Queue
     Properties: 
-      QueueName: "SampleQueue"
+      QueueName: "SampleQueu-mahi"
 
-  MySNSTopic:
+  MySNSTopic0307:
     Type: AWS::SNS::Topic
     Properties:
-      TopicName: "SampleTopic"
+      TopicName: "SampleTopic-mahi"
