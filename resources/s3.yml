@@ -4,4 +4,4 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: mahi-s3-bucket-demo
+      BucketName: mahii-s3-bucket-demo
