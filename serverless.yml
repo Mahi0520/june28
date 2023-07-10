@@ -12,4 +12,4 @@ resources:
   - ${file(./resources/ecr.yml)}
   - ${file(./resources/s3.yml)}
   - ${file(./resources/vpc.yml)}
-  - ${file(./resources/autoscaling.yml)}
+  - ${file(./resources/autoscalingtemplate.yml)}
