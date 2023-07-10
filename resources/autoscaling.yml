@@ -1,0 +1,27 @@
+---
+Resources:
+  myASG:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      LaunchTemplate:
+        LaunchTemplateId: !Ref myLaunchTemplate
+        Version: !GetAtt myLaunchTemplate.LatestVersionNumber
+      MaxSize: '1'
+      MinSize: '0'
+      DesiredCapacity: '1'
+      VPCZoneIdentifier:   
+        - subnetIdAz1
+        - subnetIdAz2
+        - subnetIdAz3
+      MetricsCollection: 
+        - Granularity: 1Minute
+          Metrics: 
+            - GroupMinSize
+            - GroupMaxSize
+      Tags:
+        - Key: Environment
+          Value: Production
+          PropagateAtLaunch: true
+        - Key: Purpose
+          Value: WebServerGroup
+          PropagateAtLaunch: false
