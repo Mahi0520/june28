@@ -29,7 +29,7 @@ Resources:
       LaunchTemplate:
         LaunchTemplateId: !Ref myLaunchTemplate
         Version: !GetAtt myLaunchTemplate.LatestVersionNumber
-      MaxSize: '1'
-      MinSize: '0'
-      DesiredCapacity: '1'
+      MaxSize: '5'
+      MinSize: '1'
+      DesiredCapacity: '2'
       VPCZoneIdentifier: !Ref Subnets
